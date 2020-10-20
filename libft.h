@@ -1,13 +1,17 @@
 #ifndef LIBFT_H
 #define LIBFT_H
 
-#include <stdlib.h>
+#include <stddef.h>
 
 /*
-** Strings
+** C type
 */
-size_t      ft_strlen(const char *s);
-char        *ft_strchr(const char *s, int c);
-char        *ft_strrchr(const char *s, int c);
+int     ft_isalpha(int c);
+int     ft_isdigit(int c);
+
+/*
+** Memory
+*/
+void    *ft_memset(void *b, int c, size_t len);
 
 #endif

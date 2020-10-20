@@ -1,8 +1,8 @@
 // TEST INCLUDES
-#include <unistd.h>
+#include <stdio.h>
 #include <string.h>
 
-#include <stddef.h>
+#include "libft.h"
 /*
 ** Returns a pointer to the first occurence of c in the string s or NULL otherwise.
 ** c can be \0, then returns pointer to \0.

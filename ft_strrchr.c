@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <stddef.h>
+#include "libft.h"
 /*
 ** Same as strchr only it finds the last occurence of c.
 */

@@ -11,17 +11,15 @@
 
 void    *ft_memset(void *b, int c, size_t len)
 {
-    unsigned char   ch;
     unsigned char   *tmp;
 
     if (len)
     {
-        ch = (unsigned char)c;
         tmp = (unsigned char *)b;
         while (len--)
-            *tmp++ = ch;
+            *tmp++ = (unsigned char)c;
     }
     return (b);
 }
 
-// no check if len is beyond string length
+// no check if len is beyond string b length

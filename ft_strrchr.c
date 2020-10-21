@@ -21,3 +21,5 @@ char    *ft_strrchr(const char *s, int c)
     }
     return (!ch ? (char *)s : (char *)res);
 }
+
+// (NULL, 'c') - error

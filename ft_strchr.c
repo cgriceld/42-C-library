@@ -4,9 +4,8 @@
 
 #include "libft.h"
 /*
-** Returns a pointer to the first occurence of c in the string s or NULL otherwise.
+** Returns a pointer to the first occurence of (char)c in the string s or NULL otherwise.
 ** c can be \0, then returns pointer to \0.
-** Same as the original strchr doesn't check whether the s is NULL.
 ** strchr is defined in <string.h>. 
 */
 
@@ -43,3 +42,4 @@ int     main(void)
 }
 
 // https://stackoverflow.com/questions/2394011/why-does-strchr-take-an-int-for-the-char-to-be-found
+// (NULL, 'c') - error

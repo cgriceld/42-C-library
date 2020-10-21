@@ -11,3 +11,28 @@
 ** If dst and src overlap, behavior is undefined.
 ** memccpy is defined in <string.h>. 
 */
+
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+{
+    unsigned char       *d;
+    const unsigned char *s;
+    
+    d = (unsigned char *)dst;
+    s = (const unsigned char *)src;
+    while (n--)
+    {
+        *d = *s++;
+        if (*d++ == (unsigned char)c)
+            return (d);
+    }
+    return (NULL);
+}
+
+// no check if n goes beyond length (no check whether dst or src already ended)
+// (NULL, NULL, 'C', 0) - no error, return NULL
+// (NULL, NULL, 'C', 3) - error
+// (NULL, s, 'C', 0) - no error, return NULL
+// (NULL, s, 'C', 3) - error
+// (d, NULL, 'C', 0) - no error, return NULL
+// (d, NULL, 'C', 3) - error
+// (d, s, 'C', 0) - no error, return NULL

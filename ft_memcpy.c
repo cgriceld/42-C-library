@@ -12,17 +12,22 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-    void *tmp;
+    unsigned char *tmp;
 
     if (dst == src || !n)
         return (dst);
-    tmp = dst;
+    tmp = (unsigned char *)dst;
     while (n--)
-        *(unsigned char *)dst++ = *(unsigned char *)src++;
-	return (tmp);
+        *tmp++ = *(const unsigned char *)src++;
+	return (dst);
 }
 
-// no check if n goes beyond dst length (no check whether dst already ended)
-// if both src and dst are NULL (no matter n is 0 or not) - no error
-// if dst or src is NULL, but n = 0 - no error
-// if dst or src is NULL, but n is non-zero - error
+// no check if n goes beyond length (no check whether dst or src already ended)
+// write to dst as much as possible; if src ended, but n still isn't 0 write some random bytes to dst
+// (NULL, NULL, 0) - no error, return NULL (dst)
+// (NULL, NULL, 3) - no error, return NULL (dst)
+// (NULL, s, 0) - no error, return NULL (dst)
+// (NULL, s, 3) - error
+// (d, NULL, 0) - no error, return dst
+// (d, NULL, 3) - error
+// (d, s, 0) - no error, return dst

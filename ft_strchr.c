@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <string.h>
-
 #include "libft.h"
 /*
 ** Returns a pointer to the first occurence of (char)c in the string s or NULL otherwise.
@@ -19,7 +15,7 @@ char    *ft_strchr(const char *s, int c)
     return (*s == ch ? (char *)s : NULL);
 }
 
-// TEST
+/*
 int     main(void)
 {
     if (ft_strchr("strchr", 'r') == strchr("strchr", 'r'))
@@ -40,6 +36,7 @@ int     main(void)
         printf("%s", "OK\n");
     return (0);
 }
+*/
 
 // https://stackoverflow.com/questions/2394011/why-does-strchr-take-an-int-for-the-char-to-be-found
 // (NULL, 'c') - error

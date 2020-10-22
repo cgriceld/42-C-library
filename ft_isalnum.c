@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <ctype.h>
-
 #include "libft.h"
 /*
 ** Returns non-zero (1) if c is letter character (65-90 & 97-122) or digit (48-57)
@@ -14,7 +10,7 @@ int     ft_isalnum(int c)
     return (ft_isalpha(c) || ft_isdigit(c));
 }
 
-// TEST
+/*
 int     main(void)
 {
     if (ft_isalnum('1') == isalnum('1'))
@@ -33,3 +29,4 @@ int     main(void)
         printf("%s", "OK\n");
     return (0);
 }
+*/

@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <string.h>
-
 #include "libft.h"
 /*
 ** If n != 0 writes n zero bytes to the string s.

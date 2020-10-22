@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <ctype.h>
-
 /*
 ** Returns non-zero (1) if c is letter character (65-90 & 97-122)
 ** or zero otherwise.

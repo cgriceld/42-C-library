@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <ctype.h>
-
 /*
 ** Returns non-zero (1) if c is decimal digit character (ASCII codes 48-57, '0'-'9')
 ** or zero otherwise.
@@ -13,7 +9,6 @@ int     ft_isdigit(int c)
     return (c >= 48 && c <= 57);
 }
 
-// TEST
 /*
 int     main(void)
 {
@@ -33,5 +28,6 @@ int     main(void)
     return (0);
 }
 */
+
 // https://stackoverflow.com/questions/46652046/why-is-parameter-to-isdigit-integer
 // https://stackoverflow.com/questions/45003739/isdigitc-a-char-or-int-type

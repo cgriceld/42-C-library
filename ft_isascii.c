@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <ctype.h>
-
 /*
 ** Returns non-zero (1) if c is ASCII character (0-127)
 ** or zero otherwise.
@@ -13,7 +9,7 @@ int     ft_isascii(int c)
     return (c >= 0 && c <= 127);
 }
 
-// TEST
+/*
 int     main(void)
 {
     if (ft_isascii('1') == isascii('1'))
@@ -32,3 +28,4 @@ int     main(void)
         printf("%s", "OK\n");
     return (0);
 }
+*/

@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <string.h>
-
 #include "libft.h"
 /*
 ** Same as strchr only it finds the last occurence of c.
@@ -17,9 +13,10 @@ char    *ft_strrchr(const char *s, int c)
     while (*s)
     {
         if (*s == ch)
-            res = s++;
+            res = s;
+        s++;
     }
-    return (!ch ? (char *)s : (char *)res);
+    return (*s == ch ? (char *)s : (char *)res);
 }
 
 // (NULL, 'c') - error

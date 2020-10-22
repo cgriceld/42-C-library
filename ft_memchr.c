@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <string.h>
-
 #include "libft.h"
 /*
 ** Returns a pointer to the first occurence of (unsigned char)c byte

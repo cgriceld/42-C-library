@@ -1,7 +1,3 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <string.h>
-
 #include "libft.h"
 /*
 ** Copies len bytes from string src to string dst.

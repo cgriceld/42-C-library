@@ -1,7 +1,4 @@
-// TEST INCLUDES
-#include <stdio.h>
-#include <string.h>
-
+#include "libft.h"
 /*
 ** Returns the length (number of characters before \0) of given string, \0 excluded.
 ** Same as the original strlen doesn't check whether the s is NULL.
@@ -18,7 +15,7 @@ size_t      ft_strlen(const char *s)
     return (str - s);
 }
 
-// TEST
+/*
 int     main(void)
 {
     if (ft_strlen("cellar") == strlen("cellar"))
@@ -32,5 +29,6 @@ int     main(void)
 
     return (0);
 }
+*/
 
 // (NULL) - error

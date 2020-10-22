@@ -7,7 +7,7 @@
 ** Compare byte by byte strings s1 and s2 both of length n. 
 ** Return:
 ** 0 - identical (empty string are identical)
-** or the diff between first two different characters.
+** or the diff between first two different bytes (unsigned chars).
 ** memcmp is defined in <string.h>. 
 */
 
@@ -22,10 +22,8 @@ int     ft_memcmp(const void *s1, const void *s2, size_t n)
     second = (const unsigned char *)s2;
     while (n--)
     {
-        if (*first != *second)
-            return (*first - *second);
-        first++;
-        second++;
+        if (*first++ != *second++)
+            return (*(--first) - *(--second));
     }
     return (0);
 }

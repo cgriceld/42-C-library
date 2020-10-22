@@ -32,3 +32,5 @@ int     main(void)
 
     return (0);
 }
+
+// (NULL) - error

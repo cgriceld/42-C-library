@@ -23,3 +23,6 @@ void    *ft_memset(void *b, int c, size_t len)
 }
 
 // no check if len is beyond string b length
+// (NULL, 'C', 0) - no error, return NULL
+// (NULL, 'C', 3) - error
+// (b, 'C', 0) - no error, return b

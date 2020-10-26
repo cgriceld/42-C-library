@@ -35,3 +35,11 @@ size_t      ft_strlcat(char *dst, const char *src, size_t dstsize)
  
  //** in first while when dst ended we already decrement size (space for \0),
  // so no we decrement after, not before
+
+// (NULL, NULL, 0) - error
+// (NULL, NULL, 3) - error
+// (NULL, s, 0) - no error, return len(s)
+// (NULL, s, 3) - error
+// (d, NULL, 0) - error
+// (d, NULL, 3) - error
+// (d, s, 0) - no error, return len(s)

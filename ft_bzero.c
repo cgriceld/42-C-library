@@ -10,3 +10,7 @@ void	ft_bzero(void *s, size_t n)
     if (n)
         ft_memset(s, 0, n);
 }
+
+// (NULL, 0) - no error, nothing done
+// (NULL, 3) - error
+// (s, 0) - no error, nothing done

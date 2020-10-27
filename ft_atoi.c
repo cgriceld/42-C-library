@@ -9,7 +9,7 @@
 /*
 ** Returns 1 if sign is negative ('-') or positive ('+').
 */
-static int      ft_sign(const char c)
+static int      ft_issign(const char c)
 {
     return (c == 43 || c == 45);
 }
@@ -32,7 +32,7 @@ int     ft_atoi(const char *str)
     sign = 1;
     while (*str && ft_isspace(*str))
         str++;
-    if (ft_sign(*str) && *str++ == '-') //*
+    if (ft_issign(*str) && *str++ == '-') //*
         sign = -1;
     while (*str && ft_isdigit(*str))
     {

@@ -32,3 +32,5 @@ int     main(void)
 */
 
 // (NULL) - error
+// the sizeof of max length string can be sizet_max,
+// but strlen of such string will be sizet_max-1 (\0 excluded)

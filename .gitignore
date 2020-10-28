@@ -2,3 +2,4 @@
 *.o
 *.code-workspace
 test.c
+.DS_Store

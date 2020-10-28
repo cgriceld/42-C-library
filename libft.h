@@ -24,5 +24,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 size_t  ft_strlen(const char *s);
 int     ft_strncmp(const char *s1, const char *s2, size_t n);
+char    *ft_strchr(const char *s, int c);
+char	*ft_strdup(const char *s1);
+char    *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

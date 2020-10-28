@@ -2,4 +2,5 @@
 *.o
 *.code-workspace
 test.c
+.gitignore
 .DS_Store

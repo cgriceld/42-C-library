@@ -18,6 +18,8 @@ void    *ft_memset(void *b, int c, size_t len)
     return (b);
 }
 
+
+// https://stackoverflow.com/questions/8385824/bytewise-reading-of-memory-signed-char-vs-unsigned-char
 // no check if len is beyond string b length - underfined behavior
 // abort trap is one of the possible side-effects of UB
 // (NULL, 'C', 0) - no error, return NULL

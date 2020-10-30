@@ -18,7 +18,8 @@ void    *ft_memset(void *b, int c, size_t len)
     return (b);
 }
 
-// no check if len is beyond string b length
+// no check if len is beyond string b length - underfined behavior
+// abort trap is one of the possible side-effects of UB
 // (NULL, 'C', 0) - no error, return NULL
 // (NULL, 'C', 3) - error
 // (b, 'C', 0) - no error, return b

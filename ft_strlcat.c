@@ -15,13 +15,13 @@ size_t      ft_strlcat(char *dst, const char *src, size_t dstsize)
     const char  *s;
 
     dstart = dst;
-    while (dstsize-- && *dst)
+    while (*dst && dstsize--)
         dst++;
     dend = dst;
     s = src;
     if (dstsize && !*dst) //*
     {
-        while (*src && dstsize--) //**
+        while (*src && --dstsize) //**
             *dst++ = *src++;
         *dst = '\0';
     }

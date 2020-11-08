@@ -1,4 +1,5 @@
 #include "libft.h"
+
 /*
 ** Searches at most len characters for first occurrence
 ** of the null-terminated string needle in the string haystack.
@@ -7,28 +8,28 @@
 ** - pointer to the start of needle in haystask if it is;
 ** - NULL if no needle;
 ** - haystask if needle is empty string.
-** strnstr is defined in <string.h>. 
+** strnstr is defined in <string.h>.
 */
 
-char    *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-    size_t nlen;
+	size_t nlen;
 
-    if (!*needle)
-        return ((char *)haystack);
-    nlen = ft_strlen(needle);
-    while (*haystack && nlen <= len)
-    {
-        if (*haystack++ == *needle)
-        {
-            if (!(ft_strncmp(haystack, ++needle, --nlen)))
-                return ((char *)--haystack);
-            needle--;
-            nlen++;
-        }
-        len--;
-    }
-    return (NULL);
+	if (!*needle)
+		return ((char *)haystack);
+	nlen = ft_strlen(needle);
+	while (*haystack && nlen <= len)
+	{
+		if (*haystack++ == *needle)
+		{
+			if (!(ft_strncmp(haystack, ++needle, --nlen)))
+				return ((char *)--haystack);
+			needle--;
+			nlen++;
+		}
+		len--;
+	}
+	return (NULL);
 }
 
 // (NULL, NULL, 0) - error

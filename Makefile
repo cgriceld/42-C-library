@@ -48,7 +48,6 @@ re: fclean all
 
 .PHONY: all clean fclean re
 
-
 # %.o : %.c
         #$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
 # pattern rule predefined in make - how to make .o file from .c

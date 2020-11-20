@@ -16,6 +16,7 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
+int				ft_numlen(int n);
 
 /*
 ** Memory
@@ -50,7 +51,7 @@ char			*ft_strtrim(char const *s1, char const *set);
 /*
 ** I/O
 */
-void			ft_putchar_fd(char c, int fd);
+int				ft_putchar_fd(const char c, const int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);

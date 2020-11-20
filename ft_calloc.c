@@ -18,3 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(res, count * size);
 	return (res);
 }
+
+// if count and size = 0
+// count = 1 and size = 1
+// alloc 1 byte and make it 0

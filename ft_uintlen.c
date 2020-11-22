@@ -1,11 +1,11 @@
 #include "libft.h"
 
 /*
-** Returns the number of digits in n,
-** SIGN EXCLUDED.
+** Returns the number of digits in n.
+** n is unisigned int type.
 */
 
-int	ft_numlen(int n)
+int	ft_uintlen(unsigned int n)
 {
 	int i;
 

@@ -16,7 +16,8 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
-int				ft_numlen(int n);
+int				ft_intlen(int n);
+int				ft_uintlen(unsigned int n);
 
 /*
 ** Memory

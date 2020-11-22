@@ -9,7 +9,6 @@
 /*
 ** Returns length of n including sign.
 */
-
 static int	ft_nlen(int n)
 {
 	int i;

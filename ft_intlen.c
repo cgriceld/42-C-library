@@ -1,8 +1,8 @@
 #include "libft.h"
 
 /*
-** Returns the number of digits in n,
-** SIGN EXCLUDED. n is int type.
+** Returns the number of digits in int n,
+** SIGN EXCLUDED
 */
 
 int	ft_intlen(int n)

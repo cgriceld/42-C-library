@@ -1,8 +1,7 @@
 #include "libft.h"
 
 /*
-** Returns the number of digits in n.
-** n is unisigned int type.
+** Returns the number of digits in unsigned int n.
 */
 
 int	ft_uintlen(unsigned int n)

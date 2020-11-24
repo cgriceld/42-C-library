@@ -16,7 +16,7 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
-char			*ft_itoahex(unsigned int n, const int flag);
+char			*ft_itoahex(size_t n, const int flag);
 int				ft_intlen(int n);
 int				ft_uintlen(unsigned int n);
 

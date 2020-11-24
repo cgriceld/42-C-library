@@ -11,7 +11,7 @@
 /*
 ** Returns length of n in hex format.
 */
-static int	ft_hexlen(unsigned int n)
+static int	ft_hexlen(size_t n)
 {
 	int i;
 
@@ -24,7 +24,7 @@ static int	ft_hexlen(unsigned int n)
 	return (i);
 }
 
-char		*ft_itoahex(unsigned int n, const int flag)
+char		*ft_itoahex(size_t n, const int flag)
 {
 	int		len;
 	char	*str;

@@ -11,6 +11,7 @@
 /*
 ** Returns length of n in hex format.
 */
+
 static int	ft_hexlen(size_t n)
 {
 	int i;

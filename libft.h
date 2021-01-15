@@ -4,6 +4,10 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 21
+#endif
+
 /*
 ** C type
 */
@@ -36,6 +40,7 @@ void			*ft_calloc(size_t count, size_t size);
 ** Strings
 */
 size_t			ft_strlen(const char *s);
+int				ft_strendcmp(const char *s1, const char *s2, int n);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
@@ -77,5 +82,20 @@ void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 							void (*del)(void *));
 int				ft_lstsize(t_list *lst);
+
+/*
+** Struct and functions for get_next_line
+*/
+typedef struct		s_lstfd
+{
+	int				fd;
+	char			*cache;
+	struct s_lstfd	*next;
+}					t_lstfd;
+
+int					get_next_line(int fd, char **line);
+int					lstdelone(t_lstfd **head, const int fd);
+char				*nchr(const char *s);
+int					subcache(char **cache, char *n);
 
 #endif

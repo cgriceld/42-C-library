@@ -23,6 +23,10 @@ char			*ft_itoa(int n);
 char			*ft_itoahex(size_t n, const int flag);
 int				ft_intlen(int n);
 int				ft_uintlen(unsigned int n);
+int				ft_strdigits(char *str);
+int				ft_numchstr(char *s, char ch);
+int				ft_strinset(char *s, char *set);
+char			*ft_strchrset(char *s, char *set);
 
 /*
 ** Memory
@@ -35,6 +39,9 @@ void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void			*ft_calloc(size_t count, size_t size);
+void			ft_ptr_free(void **ptr);
+size_t			ft_twodarr_len(void **arr);
+void			ft_twodarr_free(void ***arr, int len);
 
 /*
 ** Strings
